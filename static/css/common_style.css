@@ -1,0 +1,41 @@
+body {
+  background-image: linear-gradient( green, white);
+}
+
+.uploade {
+  padding: 60px;
+  text-align: center;
+}
+
+.mainheader {
+    background-image: linear-gradient( green, white);
+    padding: 50px;
+    text-align: center;
+    color: rgb(219, 15, 15);
+    font-size: 20px;
+}
+
+div > h1 {
+  display: inline-block; 
+}
+
+div > p{
+  margin-left: 10px;
+}
+
+.leftlogo {
+  position: fixed;
+  top: 8;
+  left: 10;
+  overflow: auto;
+}
+
+.selector {
+  padding: 60px;
+  text-align: center;
+}
+
+.lastclass{
+  padding: 60px;
+  text-align: center;
+}

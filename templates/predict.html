@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/common_style.css') }}">
+   </head>
+   <body>
+      <div class = 'mainheader'>
+         <div class = 'leftlogo'>
+            <img src = "{{ url_for('static', filename = 'images/lftlogo.jpeg') }}" width=256 height=256>
+         </div>
+         <h1>KISAAN</h1><span>(alpha)</span>
+         <p>A Machine Learning based plant disease detection service</p>   
+      </div>
+       <h3></p>File uploaded successfully! Press continue to predict, or Upload again</h3>
+      <form action = "{{ url_for('predict') }}" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "submit" name = "predict" value = 'Continue'>
+      </form>
+      <form action = "{{ url_for('delete_file') }}">
+      <input type = "submit" name = "again" value = 'Upload Again'>
+   </form>
+   </body>
+</html>
